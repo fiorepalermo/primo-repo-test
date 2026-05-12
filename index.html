@@ -10,18 +10,43 @@
 
 <body>
 
+
     <header>
+
+        <div class="menu-container">
+            <select id="console-menu" onchange="location = this.value;">
+                <option value="">Scegli una console...</option>
+                <option value="#atari">Atari 2600</option>
+                <option value="#nes">NES</option>
+                <option value="#snes">SNES</option>
+                <option value="#nes64">Nintendo 64</option>
+                <option value="#gameboy">GameBoy Color</option>
+                <option value="#wii">Nintendo Wii</option>
+                <option value="#playstation">PlayStation</option>
+                <option value="#playstation">Playstation 2</option>
+                <option value="#playstation">Playstation 3</option>
+                <option value="#playstation">PSP</option>
+                <option value="#xbox">Xbox</option>
+                <option value="#xbox">Xbox 360</option>
+            </select>
+        </div>
+
         <h1>👾RetroHub🎮</h1>
         <p>Un viaggio nella storia del Gaming!</p>
     </header>
     <main class="container">
         <div class="console-card">
-            <div class="badge"><strong>1977</strong></div>
-            <div class="info">
-                <img src="https://framemark.vam.ac.uk/collections/2024NW7057/full/735,/0/default.jpg" alt="Atari 2600">
-                <h3>Atari 2600 🕹️</h3>
-                <p>La console che ha portato i videogame nelle case di tutto il mondo</p>
-            </div>
+            <a href="https://it.wikipedia.org/wiki/Atari_2600">
+                <div class="card-link">
+                    <div id="atari" class="card"></div>
+                    <div class="badge"><strong>1977</strong></div>
+                    <div class="info">
+                        <img src="atari.png" alt="Atari 2600">
+                        <h3>Atari 2600 🕹️</h3>
+                        <p>La console che ha portato i videogame nelle case di tutto il mondo</p>
+                    </div>
+                </div>
+            </a>
         </div>
 
 
@@ -29,103 +54,183 @@
         <!--Card Console 2-->
         <div class="console-card">
             <div class="badge"><strong>1985</strong></div>
-            <img src="https://immagini.qualescegliere.it/articoli/2016/12/nintendo-classic-mini.png?tr=w-500,h-500,cm-pad_resize,bg-FFFFFF"
-                alt="NES">
-            <div class="info">
-                <h3>Nintendo Entertainment System 🕹️</h3>
-                <p>L'icona a 8-bit che ha salvato l'industria dei videogiochi</p>
-            </div>
+            <a href="https://it.wikipedia.org/wiki/Nintendo_Entertainment_System">
+                <div class="card-link">
+                    <div id="nes" class="card"></div>
+                    <img src="https://immagini.qualescegliere.it/articoli/2016/12/nintendo-classic-mini.png?tr=w-500,h-500,cm-pad_resize,bg-FFFFFF"
+                        alt="NES">
+                    <div class="info">
+                        <h3>Nintendo NES 🕹️</h3>
+                        <p>L'icona a 8-bit che ha salvato l'industria dei videogiochi</p>
+                    </div>
+                </div>
+            </a>
         </div>
 
         <!--Card Console 3-->
         <div class="console-card">
-            <div class="badge"><strong>1994</strong></div>
-            <img src="Gemini_Generated_Image_bynj0dbynj0dbynj.png" alt="PlayStation">
-            <div class="info">
-                <h3>Sony Playstation 🎮</h3>
-                <p>La rivoluzione dei CD-Rom e della grafica 3D poligonale</p>
-            </div>
+            <div class="badge"><strong>1990</strong></div>
+            <a href="https://it.wikipedia.org/wiki/Super_Nintendo_Entertainment_System">
+                <div class="card-link">
+                    <div id="nintendo-snes" class="card"></div>
+                    <img src="SNES.png" alt="PlayStation">
+                    <div class="info">
+                        <h3>Super Nintendo SNES 🎮</h3>
+                        <p>La leggenda a 16-bit che ha perfezionato il gaming 2D con capolavori indimenticabili e una
+                            grafica rivoluzionaria per l'epoca</p>
+                    </div>
+                </div>
+            </a>
         </div>
+
 
         <!--Card Console 4-->
         <div class="console-card">
-            <div class="badge"><strong>1998</strong></div>
-            <img src="https://t4.ftcdn.net/jpg/19/42/09/73/360_F_1942097399_CBjYoNqw0jCU8eHVa5hqqqgKKl60hlVA.jpg"
-                alt="GBC">
-            <div class="info">
-                <h3>GameBoy Color 👾</h3>
-                <p>La leggendaria console portatile che ha dato vita ai sogni a colori</p>
-            </div>
+            <div class="badge"><strong>1994</strong></div>
+            <a href="https://it.wikipedia.org/wiki/PlayStation">
+                <div class="card-link">
+                    <div id="playstation" class="card"></div>
+                    <img src="Gemini_Generated_Image_bynj0dbynj0dbynj.png" alt="PlayStation">
+                    <div class="info">
+                        <h3>Playstation 🎮</h3>
+                        <p>La rivoluzione dei CD-Rom e della grafica 3D poligonale che ha cambiato per sempre il mondo
+                            dei videogiochi</p>
+                    </div>
+                </div>
+            </a>
         </div>
+
 
         <!--Card Console 5-->
         <div class="console-card">
-            <div class="bridge"><strong>2000</strong></div>
-            <img src="https://cdn.trovaoffertesconti.it/wp-content/uploads/2023/05/playstation-2.png"
-                alt="Playstation 2">
-            <div class="info">
-                <h3>PlayStation 2 🎮</h3>
-                <p>La console più venduta di sempre, l'icona che ha dominato l'era dei DVD</p>
-            </div>
+            <div class="badge"><strong>1996</strong></div>
+            <a href="https://it.wikipedia.org/wiki/Nintendo_64">
+                <div class="card-link">
+                    <div id="nintendo-64" class="card"></div>
+                    <img src="nes 64.png" alt="Nintendo64">
+                    <div class="info">
+                        <h3>Nintendo 64 🎮</h3>
+                        <p>La console che ha portato il gaming nei veri mondi 3D, introducendo l'analogico e regalando
+                            capolavori che hanno riscritto le regole del genere</p>
+                    </div>
+                </div>
+            </a>
         </div>
+
+
+
         <!--Card Console 6-->
         <div class="console-card">
-            <div class="bridge"><strong>2001</strong></div>
-            <img src="https://images.sbito.it/api/v1/sbt-ads-images-pro/images/6e/6e91fa0d-66e6-4589-af7d-063852e5c21b?rule=vertical-mini-card-1x-auto"
-                alt="Xbox Classic">
-            <div class="info">
-                <h3>Xbox 🎮</h3>
-                <p>Il debutto di Microsoft nel gaming: potenza pura e la nascita di Halo</p>
-            </div>
+            <div class="badge"><strong>1998</strong></div>
+            <a href="https://it.wikipedia.org/wiki/Game_Boy_Color">
+                <div class="card-link">
+                    <div id="gameboy-color" class="card"></div>
+                    <img src="https://t4.ftcdn.net/jpg/19/42/09/73/360_F_1942097399_CBjYoNqw0jCU8eHVa5hqqqgKKl60hlVA.jpg"
+                        alt="GBC">
+                    <div class="info">
+                        <h3>GameBoy Color 👾</h3>
+                        <p>La leggendaria console portatile che ha dato vita ai sogni a colori</p>
+                    </div>
+                </div>
+            </a>
         </div>
 
         <!--Card Console 7-->
-
         <div class="console-card">
-            <div class="bridge"><strong>2004</strong></div>
-            <img src="https://www.shutterstock.com/image-photo/neuulm-germany-june-25-2025-260nw-2645515695.jpg"
-                alt="psp">
-            <div class="info">
-                <h3>PlayStation Portable 👾</h3>
-                <p>Il debutto portatile di Sony: una vera PlayStation da taschino</p>
-            </div>
+            <div class="bridge"><strong>2000</strong></div>
+            <a href="https://it.wikipedia.org/wiki/PlayStation_2">
+                <div class="card-link">
+                    <div id="playstation-2" class="card"></div>
+                    <img src="https://cdn.trovaoffertesconti.it/wp-content/uploads/2023/05/playstation-2.png"
+                        alt="Playstation 2">
+                    <div class="info">
+                        <h3>PlayStation 2 🎮</h3>
+                        <p>La console più venduta di sempre, l'icona che ha dominato l'era dei DVD</p>
+                    </div>
+                </div>
+            </a>
         </div>
-
         <!--Card Console 8-->
-
         <div class="console-card">
-            <div class="bridge"><strong>2005</strong></div>
-            <img src="https://t3.ftcdn.net/jpg/04/75/34/44/360_F_475344460_eWIoOoObs8FVeBC1rZQK8oBAC0NQqYwo.jpg"
-                alt="Xbox 360">
-            <div class="info">
-                <h3>Xbox 360 🎮</h3>
-                <p>L'era dell'alta definizione e dei grandi successi online su Xbox Live</p>
-            </div>
+            <div class="bridge"><strong>2001</strong></div>
+            <a href="https://it.wikipedia.org/wiki/Xbox">
+                <div class="card-link">
+                    <div id="xbox" class="card"></div>
+                    <img src="https://images.sbito.it/api/v1/sbt-ads-images-pro/images/6e/6e91fa0d-66e6-4589-af7d-063852e5c21b?rule=vertical-mini-card-1x-auto"
+                        alt="Xbox Classic">
+                    <div class="info">
+                        <h3>Xbox 🎮</h3>
+                        <p>Il debutto di Microsoft nel gaming: potenza pura e la nascita di Halo</p>
+                    </div>
+                </div>
+            </a>
         </div>
 
         <!--Card Console 9-->
 
         <div class="console-card">
-            <div class="bridge"><strong>2006</strong></div>
-            <img src="https://www.backmarket.it/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D260/https://d2e6ccujb3mkqf.cloudfront.net/d71088ca-6292-4993-a91a-3d0ffd66f7d7-3_79372807-d5c1-42cf-8f7c-b45f775e2315.jpg"
-                alt="Playstation 3">
-            <div class="info">
-                <h3>PlayStation 3 🎮</h3>
-                <p>Potenza Blu-ray e grandi esclusive: l'inizio dell'era moderna di Sony</p>
-            </div>
+            <div class="bridge"><strong>2004</strong></div>
+            <a href="https://it.wikipedia.org/wiki/PlayStation_Portable">
+                <div class="card-link">
+                    <div id="psp" class="card"></div>
+                    <img src="https://www.shutterstock.com/image-photo/neuulm-germany-june-25-2025-260nw-2645515695.jpg"
+                        alt="psp">
+                    <div class="info">
+                        <h3>PlayStation Portable 👾</h3>
+                        <p>Il debutto portatile di Sony: una vera PlayStation da taschino</p>
+                    </div>
+                </div>
+            </a>
         </div>
 
         <!--Card Console 10-->
+
+        <div class="console-card">
+            <div class="bridge"><strong>2005</strong></div>
+            <a href="https://it.wikipedia.org/wiki/Xbox_360">
+                <div class="card-link">
+                    <div id="xbox-360" class="card"></div>
+                    <img src="https://t3.ftcdn.net/jpg/04/75/34/44/360_F_475344460_eWIoOoObs8FVeBC1rZQK8oBAC0NQqYwo.jpg"
+                        alt="Xbox 360">
+                    <div class="info">
+                        <h3>Xbox 360 🎮</h3>
+                        <p>L'era dell'alta definizione e dei grandi successi online su Xbox Live</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!--Card Console 11-->
+
         <div class="console-card">
             <div class="bridge"><strong>2006</strong></div>
-            <img src="https://www.shutterstock.com/image-photo/kent-uk-01012023-nintendo-wii-600nw-2393571153.jpg"
-                alt="Wii">
-            <div class="info">
-                <h3>Nintendo Wii 🕹️</h3>
-                <p>La rivoluzione dei sensori di movimento che ha fatto giocare tutta la famiglia</p>
+            <a href="https://it.wikipedia.org/wiki/PlayStation_3">
+                <div class="card-link">
+                    <div id="playstation-3" class="card"></div>
+                    <img src="https://www.backmarket.it/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D260/https://d2e6ccujb3mkqf.cloudfront.net/d71088ca-6292-4993-a91a-3d0ffd66f7d7-3_79372807-d5c1-42cf-8f7c-b45f775e2315.jpg"
+                        alt="Playstation 3">
+                    <div class="info">
+                        <h3>PlayStation 3 🎮</h3>
+                        <p>Potenza Blu-ray e grandi esclusive: l'inizio dell'era moderna di Sony</p>
+                    </div>
+                </div>
+            </a>
+        </div>
 
-
-            </div>
+        <!--Card Console 12-->
+        <div class="console-card">
+            <div class="bridge"><strong>2006</strong></div>
+            <a href="https://it.wikipedia.org/wiki/Wii">
+                <div class="card-link">
+                    <div id="wii" class="card"></div>
+                    <img src="https://www.shutterstock.com/image-photo/kent-uk-01012023-nintendo-wii-600nw-2393571153.jpg"
+                        alt="Wii">
+                    <div class="info">
+                        <h3>Nintendo Wii 🕹️</h3>
+                        <p>La rivoluzione dei sensori di movimento che ha fatto giocare tutta la famiglia</p>
+                    </div>
+                </div>
+            </a>
         </div>
 
 

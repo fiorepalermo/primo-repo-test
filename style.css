@@ -65,6 +65,44 @@ header {
 
 }
 
+.card-link {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: block;
+}
+
+.card-link p,
+.card-link h3,
+
+.card-link div {
+    color: #f4f4f4;
+    text-decoration: none;
+
+}
+
+.card-link:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#console-menu {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    outline: none;
+    backdrop-filter: blur(5px);
+
+}
+
+#console-menu option {
+    background: #2c2c2c;
+    color: white;
+}
+
 
 @keyframes rgbText {
     0% {
